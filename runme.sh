@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rm file* 2>>/dev/null
-
 make 1>>/dev/null
 
 python3 gen_fileA.py
@@ -25,5 +23,3 @@ echo >> result.txt
 stat fileA.gz >> result.txt
 echo >> result.txt
 stat fileB.gz >> result.txt
-
-make clean 2>>/dev/null 1>>/dev/null
